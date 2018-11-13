@@ -3,6 +3,23 @@ body {
     letter-spacing: .5px;
 }
 
+.mynav{
+    background-color: whitesmoke;
+}
+
+.mynav .nav-link{
+    color: #34495e;
+    font-weight: 600;
+}
+
+.mynav .active{
+    color: #e67e22;
+}
+
+.mynav .nav-link:hover{
+    color: #e67e22;
+}
+
 img {
     width: 100%;
 }
@@ -11,4 +28,10 @@ img {
     color: #e67e22;
     font-weight: 600;
     font-size: 55px;
+}
+
+.mybtn {
+    background-color: #e67e22;
+    color: white;
+    font-weight: 600;
 }
