@@ -45,3 +45,7 @@ img {
 .modal-dialog {
     width: 400px;
 }
+
+#modalInvalid > .modal-dialog{
+    width: 500px;
+}
