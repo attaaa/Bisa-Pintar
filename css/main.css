@@ -1,0 +1,14 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .5px;
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    color: #e67e22;
+    font-weight: 600;
+    font-size: 55px;
+}
