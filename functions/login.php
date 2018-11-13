@@ -12,7 +12,6 @@
             $_SESSION['login'] = 'invalid';
             header('Location: ../');
         }
-        
     }
 
 ?>

@@ -3,6 +3,14 @@ body {
     letter-spacing: .5px;
 }
 
+.container-header-sm {
+    display: none;
+}
+
+.sidenav {
+    display: none;
+}
+
 .mynav{
     background-color: whitesmoke;
 }
@@ -36,6 +44,14 @@ img {
     font-weight: 600;
 }
 
+.btn:hover {
+    background-color: #d35400;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(230, 126, 34,.5);
+}
+
 .btn-main {
     background-color: #e67e22;
     color: white;
@@ -49,3 +65,62 @@ img {
 #modalInvalid > .modal-dialog{
     width: 500px;
 }
+
+.form-control:focus {
+    border-color: rgb(230, 126, 34);
+    box-shadow: 0 0 0 0.2rem rgba(230, 126, 34,.5);
+}
+
+@media (max-width: 991.98px) { 
+
+    .title {
+        font-size: 40px;
+    }
+
+    .moto {
+        font-size: 20px;
+    }
+
+    .jargon {
+        font-size: 14px;
+    }
+ 
+    .container {
+        max-width: 920px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .container-header{
+        display: none;
+    }
+
+    .container-header-sm{
+        display: block;
+    }
+
+    button.btnNav{
+        font-size: 28px;
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-appearance: none;
+    }
+
+    .menu{
+        font-size: 20px;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: whitesmoke;
+        overflow-x: hidden;
+        transition: 0.5s;
+        display: block;
+    }
+ }

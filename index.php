@@ -13,18 +13,43 @@
     <title>BisaPintar</title>
 </head>
 
-<body class="mt-5">
+<body class="mt-lg-5 mt-md-4 mb-5">
     
+    <div class="container container-header-sm bg-dark py-3 px-4">
+        <button type="button" class="btnNav text-light d-flex align-items-center">
+            <i class="fas fa-bars "></i><span class="ml-3 menu">Menu</span>
+        </button>
+    </div>
+
+    <div class="modal" id="modalSide" tabindex="-1" role="dialog">
+        <div id="mySidenav" class="sidenav">
+            <button type="button" id="closeNav" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <ul class="nav flex-column mynav px-4 mt-5">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link active mx-2 px-0">BERANDA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btnDaftar nav-link mx-2 px-0">DAFTAR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btnMasuk nav-link mx-2 px-0">MASUK</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container container-header mb-5">
         <ul class="nav justify-content-end mynav py-3 px-4">
             <li class="nav-item text-center">
-                <a href="" class="nav-link active mx-3 px-0 pb-0">BERANDA</a>
+                <a href="#" class="nav-link active mx-4 px-0 pb-0">BERANDA</a>
             </li>
             <li class="nav-item">
-                <a href="#" id="btnDaftar" class="nav-link mx-3 px-0">DAFTAR</a>
+                <a href="#" class="btnDaftar nav-link mx-4 px-0">DAFTAR</a>
             </li>
             <li class="nav-item">
-                <a href="#" id="btnMasuk" class="nav-link mx-3 px-0">MASUK</a>
+                <a href="#" class="btnMasuk nav-link mx-4 px-0">MASUK</a>
             </li>
         </ul>
     </div>
@@ -32,16 +57,15 @@
     <div class="container container-body">
         <div class="row">
 
-            <div class="col">
+            <div class="col-md col-sm-12 mt-5 mt-md-0">
                 <img src="img/people_study.png" alt="Study">
             </div>
 
-            <div class="col pt-5">
-                <h3>Belajar APPL Jadi Lebih Mudah dengan</h3>
-                <h1 class="title">BISAPINTAR</h1>
-                <br/><br/>
-                <p>Nilai APPL A++, paham dengan materi APPL 100%.</p>
-                <button type="button" class="btn mybtn py-3 px-4">MULAI SEKARANG!</button>
+            <div class="col-md pt-5 col-sm-12 text-md-left text-center">
+                <h3 class="moto mb-2 mb-md-0">Belajar APPL Jadi Lebih Mudah dengan</h3>
+                <h1 class="title mb-lg-5 mb-md-4 mb-5">BISAPINTAR</h1>
+                <p class="jargon">Nilai APPL A++, paham dengan materi APPL 100%.</p>
+                <button type="button" id="btnMulai" class="btn mybtn py-lg-3 py-md-2 px-4">MULAI SEKARANG!</button>
             </div>
 
         </div>
@@ -115,12 +139,25 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        $('#btnMasuk').click(function(){
+        $('.btnMasuk').click(function(){
             $('#modalLogin').modal('show');
         });
 
-        $('#btnDaftar').click(function(){
+        $('.btnDaftar').click(function(){
             $('#modalDaftar').modal('show');
+        });
+
+        $('#btnMulai').click(function(){
+            $('#modalDaftar').modal('show');
+        });
+
+        $('.btnNav').click(function(){
+            $('#modalSide').modal('show');
+            $('.sidenav').css('width','250px');
+        })
+        $('#closeNav').click(function(){
+            $('#modalSide').modal('hide');
+            $('.sidenav').css('width','0');
         })
     </script>
 
