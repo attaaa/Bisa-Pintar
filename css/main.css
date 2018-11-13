@@ -35,3 +35,13 @@ img {
     color: white;
     font-weight: 600;
 }
+
+.btn-main {
+    background-color: #e67e22;
+    color: white;
+    font-weight: 600;
+}
+
+.modal-dialog {
+    width: 400px;
+}
