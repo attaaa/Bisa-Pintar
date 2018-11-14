@@ -59,7 +59,7 @@ img {
 }
 
 .modal-dialog {
-    width: 400px;
+    max-width: 30%;
 }
 
 #modalInvalid > .modal-dialog{
@@ -69,6 +69,12 @@ img {
 .form-control:focus {
     border-color: rgb(230, 126, 34);
     box-shadow: 0 0 0 0.2rem rgba(230, 126, 34,.5);
+}
+
+@media (max-width: 1199.98px) {
+    .modal-dialog {
+        max-width: 40%;
+    } 
 }
 
 @media (max-width: 991.98px) { 
@@ -87,6 +93,11 @@ img {
  
     .container {
         max-width: 920px;
+    }
+
+    .modal-dialog {
+        max-width: 50%;
+        margin: auto;
     }
 }
 
@@ -122,5 +133,10 @@ img {
         overflow-x: hidden;
         transition: 0.5s;
         display: block;
+    }
+
+    .modal-dialog {
+        max-width: 95%;
+        margin: auto;
     }
  }

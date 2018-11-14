@@ -146,10 +146,16 @@
 
         $('.btnMasuk').click(function(){
             $('#modalLogin').modal('show');
+
+            $('#modalSide').modal('hide');
+            $('.sidenav').css('width','0');
         });
 
         $('.btnDaftar').click(function(){
             $('#modalDaftar').modal('show');
+
+            $('#modalSide').modal('hide');
+            $('.sidenav').css('width','0');
         });
 
         $('#btnMulai').click(function(){
