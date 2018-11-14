@@ -78,14 +78,14 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <form class="mt-5 mb-4" action="functions/login.php" method="GET">
+                    <form id="formLogin" class="mt-5 mb-4" action="functions/login.php" method="GET">
                         <div class="form-group">
                             <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Username">
-                            <small id="usernameHelp" class="form-text text-muted">Mohon input username anda.</small>
+                            <small id="usernameHelp" class="form-text text-danger">Mohon input username anda.</small>
                         </div>
-                        <div class="form-group mb-5">
+                        <div class="form-group mb-4">
                             <input type="password" name="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Password">
-                            <small id="passwordHelp" class="form-text text-muted">Mohon input password anda.</small>
+                            <small id="passwordHelp" class="form-text text-danger">Mohon input password anda.</small>
                         </div>
                         <button name="masuk" type="submit" class="btn btn-main w-100 py-2">MASUK</button>
                     </form>
@@ -101,18 +101,22 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <form class="mt-5 mb-4">
+                    <form id="formDaftar" class="mt-5 mb-4">
                         <div class="form-group">
                             <input type="text" class="form-control" id="nama" placeholder="nama lengkap">
+                            <small id="namaHelp" class="form-text text-danger">Mohon input nama anda.</small>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" id="uname" placeholder="username">
+                            <small id="unameHelp" class="form-text text-danger">Mohon input username anda.</small>
                         </div>
                         <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder="email">
-                            </div>
+                            <input type="email" class="form-control" id="email" placeholder="email">
+                            <small id="emailHelp" class="form-text text-danger">Mohon input email anda.</small>
+                        </div>
                         <div class="form-group mb-5">
                             <input type="password" class="form-control" id="pass" placeholder="password">
+                            <small id="passHelp" class="form-text text-danger">Mohon input password anda.</small>
                         </div>
                         <button type="submit" class="btn btn-main w-100 py-2">DAFTAR</button>
                     </form>
@@ -139,6 +143,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
+
         $('.btnMasuk').click(function(){
             $('#modalLogin').modal('show');
         });
@@ -154,11 +159,63 @@
         $('.btnNav').click(function(){
             $('#modalSide').modal('show');
             $('.sidenav').css('width','250px');
-        })
+        });
+
         $('#closeNav').click(function(){
             $('#modalSide').modal('hide');
             $('.sidenav').css('width','0');
-        })
+        });
+
+        //hide semua form helper pada form login
+        $('#usernameHelp').hide();
+        $('#passwordHelp').hide();
+
+        //Cek apakah form login ada yang kosong
+        $('#formLogin').submit(function(){
+            var username = $.trim($('#username').val());
+            var password = $.trim($('#password').val());
+            $('#usernameHelp').hide();
+            $('#passwordHelp').hide();
+
+            if ((username == '') && (password == '')) {
+                $('#usernameHelp').show();
+                $('#passwordHelp').show();
+                return false;
+            } else if (username == '') {
+                $('#usernameHelp').show();
+                return false;
+            } else if (password =='') {
+                $('#passwordHelp').show();
+                return false;
+            }
+        });
+
+        //hide semua helper pada form daftar
+        $('#namaHelp').hide();
+        $('#unameHelp').hide();
+        $('#emailHelp').hide();
+        $('#passHelp').hide();
+
+        //cek apakah form daftar ada yang kosong
+        $('#formDaftar').submit(function(){
+            var nama = $.trim($('#nama').val());
+            var uname = $.trim($('#uname').val());
+            var email = $.trim($('#email').val());
+            var pass = $.trim($('#pass').val());
+
+            $('#namaHelp').hide();
+            $('#unameHelp').hide();
+            $('#emailHelp').hide();
+            $('#passHelp').hide();
+
+            if ((nama == '') || (uname == '') || (email == '') || (pass == '')) {
+                if (nama == '') {$('#namaHelp').show();}
+                if (uname == '') {$('#unameHelp').show();}
+                if (email == '') {$('#emailHelp').show();}
+                if (pass == '') {$('#passHelp').show();}  
+                return false;
+            }
+        });
     </script>
 
     <?php
