@@ -101,31 +101,31 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <form id="formDaftar" class="mt-5 mb-4">
+                    <form id="formDaftar" action="functions/signup.php" method="GET" class="mt-5 mb-4">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="nama" placeholder="nama lengkap">
+                            <input type="text" name="nama" class="form-control" id="nama" placeholder="nama lengkap">
                             <small id="namaHelp" class="form-text text-danger">Mohon input nama anda.</small>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="uname" placeholder="username">
+                            <input type="text" name="uname" class="form-control" id="uname" placeholder="username">
                             <small id="unameHelp" class="form-text text-danger">Mohon input username anda.</small>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="email">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="email">
                             <small id="emailHelp" class="form-text text-danger">Mohon input email anda.</small>
                         </div>
                         <div class="form-group mb-5">
-                            <input type="password" class="form-control" id="pass" placeholder="password">
+                            <input type="password" name="pass" class="form-control" id="pass" placeholder="password">
                             <small id="passHelp" class="form-text text-danger">Mohon input password anda.</small>
                         </div>
-                        <button type="submit" class="btn btn-main w-100 py-2">DAFTAR</button>
+                        <button type="submit" name="daftar" class="btn btn-main w-100 py-2">DAFTAR</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="modalInvalid" tabindex="-1" role="dialog">
+    <div class="modal fade" id="modalInvalidMasuk" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content px-2 text-center">
                 <div class="modal-body">
@@ -133,6 +133,19 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <p class="mt-5"><i class="fas fa-exclamation-circle fa-5x text-danger"></i><br/><br/>Mohon maaf, username atau password tidak valid.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalInvalidDaftar" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content px-2 text-center">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="mt-5"><i class="fas fa-exclamation-circle fa-5x text-danger"></i><br/><br/>Mohon maaf username sudah terdaftar.</p>
                 </div>
             </div>
         </div>
@@ -227,9 +240,16 @@
     <?php
         if (isset($_SESSION['login'])) {
             if ($_SESSION['login'] == 'invalid') {
-                echo "<script>$('#modalInvalid').modal('show');</script>";
+                echo "<script>$('#modalInvalidMasuk').modal('show');</script>";
             }
             unset($_SESSION['login']); 
+        }
+
+        if (isset($_SESSION['daftar'])) {
+            if ($_SESSION['daftar'] == 'invalid') {
+                echo "<script>$('#modalInvalidDaftar').modal('show');</script>";
+            }
+            unset($_SESSION['daftar']);
         }
     ?>
 
