@@ -73,6 +73,7 @@ img {
 
 .img-materi {
     height: 200px;
+    border: 2px solid gray;
 }
 
 @media (max-width: 1199.98px) {
@@ -159,18 +160,8 @@ img {
     }
   }
 
-#materi{  
-      margin: 1.5em 10em 1em 10em;
-      padding: 2em;
-      background-color: white;
-  }
-
 .materi-detil{  
     margin: 1.5em 12em 1em 12em;
     padding: 2em;
     background-color: white;
-}
-
-.boxcard{
-    margin: 1.5em;
 }

@@ -15,6 +15,7 @@
 
 <body class="mt-lg-5 mt-md-4 mb-5">
     
+    <!--Tampilan navigasi mobile-->
     <div class="container container-header-sm bg-dark py-3 px-4">
         <button type="button" class="btnNav text-light d-flex align-items-center">
             <i class="fas fa-bars "></i><span class="ml-3 menu">Menu</span>
@@ -39,7 +40,9 @@
             </ul>
         </div>
     </div>
+    <!--end tampilan navigasi mobile-->
 
+    <!--tampilan navigasi desktop-->
     <div class="container container-header mb-5">
         <ul class="nav justify-content-end mynav py-3 px-4">
             <li class="nav-item text-center">
@@ -53,7 +56,9 @@
             </li>
         </ul>
     </div>
+    <!--end navigasi desktop-->
 
+    <!--headlight-->
     <div class="container container-body">
         <div class="row">
 
@@ -70,7 +75,9 @@
 
         </div>
     </div>   
+    <!--end headlight-->
 
+    <!--modal login-->
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content px-2">
@@ -93,7 +100,9 @@
             </div>
         </div>
     </div>
+    <!--end modal login-->
 
+    <!--modal daftar-->
     <div class="modal fade" id="modalDaftar" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content px-2">
@@ -124,7 +133,9 @@
             </div>
         </div>
     </div>
+    <!--end modal daftar-->
 
+    <!--error massage invalid login-->
     <div class="modal fade" id="modalInvalidMasuk" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content px-2 text-center">
@@ -137,7 +148,9 @@
             </div>
         </div>
     </div>
+    <!--end error massage-->
 
+    <!--error massage invalid daftar-->
     <div class="modal fade" id="modalInvalidDaftar" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content px-2 text-center">
@@ -150,10 +163,12 @@
             </div>
         </div>
     </div>
+    <!--end error massage daftar-->
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
     <script>
 
