@@ -71,6 +71,10 @@ img {
     box-shadow: 0 0 0 0.2rem rgba(230, 126, 34,.5);
 }
 
+.img-materi {
+    height: 200px;
+}
+
 @media (max-width: 1199.98px) {
     .modal-dialog {
         max-width: 40%;
@@ -169,10 +173,4 @@ img {
 
 .boxcard{
     margin: 1.5em;
-}
-
-.btn-materi{
-    text-align: left;
-    font-size: 18px;
-
 }
