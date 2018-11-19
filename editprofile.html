@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/profile.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Profile</title>
+    <title>Edit Profile</title>
 </head>
 <body class="mt-lg-5 mt-md-4 mb-md-1 mb-5">
 
@@ -86,15 +86,10 @@
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-                </div>
+                
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -105,70 +100,52 @@
                     <div class="tab-content profile-tab" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label>User Id</label>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>Kshiti123</p>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="userid">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label>Name</label>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>Kshiti Ghelani</p>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="name">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
-                                    <label>Gender</label>
+                                <div class="col-md-4">
+                                    <label>TTL</label>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>female</p>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="ttl">
                                 </div>
-                            </div>
-                            <div class="row">
-                                    <div class="col-md-6">
-                                        <label>TTL</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p>Jakarta, 1 Januari 1999</p>
-                                    </div>
                                 </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label>Email</label>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>kshitighelani@gmail.com</p>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="email">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label>Phone</label>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>123 456 7890</p>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="phone">
                                 </div>
                             </div>
-                            
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <br>
                             <div class="row">
-                                <div class="col-md-6">
-                                    <label>History</label>
+                                <div class="col-md-4">
+
                                 </div>
-                                <div class="col-md-6">
-                                    <p>Expert</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Hourly Rate</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>10$/hr</p>
+                                <div class="col-md-8">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -177,6 +154,5 @@
             </div>
         </form>
     </div>
-
 </body>
 </html>

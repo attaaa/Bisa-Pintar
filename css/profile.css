@@ -29,10 +29,10 @@
     top: 0;
 }
 .profile-head h5{
-    color: #333;
+    color: #e67e22;
 }
 .profile-head h6{
-    color: #0062cc;
+    color: #e67e22;
 }
 .profile-edit-btn{
     border: none;
@@ -40,16 +40,16 @@
     width: 70%;
     padding: 2%;
     font-weight: 600;
-    color: #6c757d;
+    color: #e67e22;
     cursor: pointer;
 }
 .proile-rating{
     font-size: 12px;
-    color: #818182;
+    color: #e67e22;
     margin-top: 5%;
 }
 .proile-rating span{
-    color: #495057;
+    color: #e67e22;
     font-size: 15px;
     font-weight: 600;
 }
@@ -62,7 +62,7 @@
 }
 .profile-head .nav-tabs .nav-link.active{
     border: none;
-    border-bottom:2px solid #0062cc;
+    border-bottom:2px solid #e67e22;
 }
 .profile-work{
     padding: 14%;
@@ -70,13 +70,13 @@
 }
 .profile-work p{
     font-size: 12px;
-    color: #818182;
+    color: #e67e22;
     font-weight: 600;
     margin-top: 10%;
 }
 .profile-work a{
     text-decoration: none;
-    color: #495057;
+    color: #e67e22;
     font-weight: 600;
     font-size: 14px;
 }
@@ -88,5 +88,9 @@
 }
 .profile-tab p{
     font-weight: 600;
-    color: #0062cc;
+    color: #e67e22;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #e67e22;
 }
