@@ -26,13 +26,13 @@
             </button>
             <ul class="nav flex-column mynav px-4 mt-5">
 				<li class="nav-item">
-					<a href="#" class="nav-link mx-4 px-0 pb-0 nav-left">PROFILE</a>
+					<a href="profile.php" class="nav-link mx-4 px-0 pb-0 nav-left">PROFILE</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link mx-4 px-0">MATERI</a>
+					<a href="materi.html" class="nav-link mx-4 px-0">MATERI</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link mx-4 px-0 active" >LATIHAN</a>
+					<a href="latihan.php" class="nav-link mx-4 px-0 active" >LATIHAN</a>
 				</li>
 				<li class="nav-item">
 					<a href="#" class="nav-link mx-4 px-0">LOGOUT</a>
@@ -46,13 +46,13 @@
 	<div class="container container-header mb-4">
 		<ul class="nav justify-content-end mynav py-3 px-4">
 			<li class="nav-item">
-				<a href="#" class="nav-link mx-4 px-0 pb-0 nav-left">PROFILE</a>
+				<a href="profile.php" class="nav-link mx-4 px-0 pb-0 nav-left">PROFILE</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link mx-4 px-0" href="#">MATERI</a>
+				<a href="materi.html" class="nav-link mx-4 px-0">MATERI</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link mx-4 px-0 active">LATIHAN</a>
+				<a href="latihan.php" class="nav-link mx-4 px-0 active">LATIHAN</a>
 			</li>
 			<li class="nav-item">
 				<a href="#" class="nav-link mx-4 px-0">LOGOUT</a>
