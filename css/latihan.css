@@ -1,5 +1,5 @@
 #qid {
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 20px;
@@ -358,3 +358,4 @@
 .glyphicon {
     color:  #f0ad4e;
 }
+
