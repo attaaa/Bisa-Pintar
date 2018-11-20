@@ -94,6 +94,9 @@
                         Change Photo
                         <input type="file" name="file"/>
                     </div>
+                    <div class="justify-content-md-end justify-content-center">
+                        <button type="button" class="btn btn-main px-4 py-2" data-toggle="modal" data-target="#modalEdit">EDIT PROFIL</button>
+                    </div>
                 </div>
 
             </div>
@@ -103,7 +106,7 @@
                 <!--profile highlight-->
                 <div class="profile-head mb-4">
                     <h2 class="text-main main-name">Kshiti Ghelani</h2>
-                    <h4 class="">Student of Computing</h4>
+                    <h5 class="">Student of Computing</h5>
                 </div>
 
                 <div class="row mb-2">
@@ -133,9 +136,7 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-md-end justify-content-center">
-                    <button type="button" class="btn btn-main px-4 py-2" data-toggle="modal" data-target="#modalEdit">EDIT PROFIL</button>
-                </div>
+                
                 
             </div>
 
