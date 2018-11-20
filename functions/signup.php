@@ -12,7 +12,7 @@
             header('Location: ../');
         } else {
             $_SESSION['daftar'] = 'valid';
-            //go to profil
+            header('Location: ../profile.php');
         }
     }
 

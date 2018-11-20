@@ -7,7 +7,7 @@
         if (($username == 'test') && ($password == 'test')) {
             $_SESSION['user'] = $username;
             $_SESSION['login'] = 'valid';
-            //go to profil
+            header('Location: ../profile.php');
         } else {
             $_SESSION['login'] = 'invalid';
             header('Location: ../');
