@@ -194,6 +194,9 @@
         var kj2 = 'b';
         var kj3 = 'c';
 
+        //jawaban yang dipilih
+        var jawaban1, jawaban2, jawaban3;
+
         //hide semua soal
         $('#soal2').hide();
         $('#soal3').hide();
@@ -245,28 +248,35 @@
         $('#c3').click(function(){ jawab3('#jc3','#c3'); });
         $('#d3').click(function(){ jawab3('#jd3','#d3'); });
         
+        //cek jawaban
         //cek apakah ada jawaban yang belum dipilih
         $('#selesaiBtn').click(function(){
-            var jawaban1 = $('input[name="pilihan1"]:checked').val();
-            var jawaban2 = $('input[name="pilihan2"]:checked').val();
-            var jawaban3 = $('input[name="pilihan3"]:checked').val();
+            jawaban1 = $('input[name="pilihan1"]:checked').val();
+            jawaban2 = $('input[name="pilihan2"]:checked').val();
+            jawaban3 = $('input[name="pilihan3"]:checked').val();
             if ((jawaban1 == undefined) || (jawaban2 == undefined) || (jawaban3 == undefined)) {
                 var belumSelse = 'Anda belum menyelesaikan soal ';
                 if (jawaban1 == undefined) { belumSelse = belumSelse + '1 '; }
                 if (jawaban2 == undefined) { belumSelse = belumSelse + '2 '; }
                 if (jawaban3 == undefined) { belumSelse = belumSelse + '3 '; }
                 $('#pesanSelesai').text(belumSelse);
-                $('#modalSelesai').modal('show');
-            } 
+            } else {
+                $('#pesanSelesai').text('');
+            }
+            //tampilkan alert 
+            $('#modalSelesai').modal('show');
+            
         });
 
-        //cek jawaban
+        //hitung nilai jika tombol ya di klik
         $('#yaSelesai').click(function(){
             var jawabanBenar = 0;
             if (jawaban1 == kj1) { jawabanBenar++; }
             if (jawaban2 == kj2) { jawabanBenar++; }
             if (jawaban3 == kj3) { jawabanBenar++; }
+            alert(jawabanBenar)
         })
+
 
 
     </script>
