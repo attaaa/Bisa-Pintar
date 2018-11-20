@@ -38,18 +38,12 @@ img {
     font-size: 55px;
 }
 
-.mybtn {
-    background-color: #e67e22;
-    color: white;
-    font-weight: 600;
+.btn-main:hover {
+    background-color: #d35400 !important;
 }
 
-.btn:hover {
-    background-color: #d35400;
-}
-
-.btn:focus {
-    box-shadow: 0 0 0 0.2rem rgba(230, 126, 34,.5);
+.btn-main:focus {
+    box-shadow: 0 0 0 0.2rem rgba(230, 126, 34,.5) !important;
 }
 
 .btn-main {
@@ -80,6 +74,33 @@ img {
     font-weight: 600;
 }
 
+.text-main{
+    color: #e67e22;
+}
+
+.main-profile label{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-name{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.px-6{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.bg-img{
+    position: fixed;
+    bottom: -14%;
+    right: -10%;
+    width: 400px;
+    transform: rotate(-45deg);
+}
+
 @media (max-width: 1199.98px) {
     .modal-dialog {
         max-width: 40%;
@@ -108,9 +129,28 @@ img {
         max-width: 50%;
         margin: auto;
     }
+    .px-6{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .navbar-nav > li.navbar-right {
+        float: right !important;
+    }
 }
 
 @media (max-width: 767.98px) { 
+    .bg-img{
+        display: none;
+    }
+
     .container-header{
         display: none;
     }
@@ -148,18 +188,9 @@ img {
         max-width: 95%;
         margin: auto;
     }
- }
 
- @media (min-width: 768px) {
-    .navbar-nav {
-      width: 100%;
-      text-align: center;
+    .px-6{
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .navbar-nav > li {
-      float: none;
-      display: inline-block;
-    }
-    .navbar-nav > li.navbar-right {
-      float: right !important;
-    }
-  }
+ }

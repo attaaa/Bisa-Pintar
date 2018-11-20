@@ -14,7 +14,7 @@
 </head>
 
 <body class="mt-lg-5 mt-md-4 mb-5">
-    
+
     <!--Tampilan navigasi mobile-->
     <div class="container container-header-sm bg-dark py-3 px-4">
         <button type="button" class="btnNav text-light d-flex align-items-center">
@@ -70,7 +70,7 @@
                 <h3 class="moto mb-2 mb-md-0">Belajar APPL Jadi Lebih Mudah dengan</h3>
                 <h1 class="title mb-lg-5 mb-md-4 mb-5">BISAPINTAR</h1>
                 <p class="jargon">Nilai APPL A++, paham dengan materi APPL 100%.</p>
-                <button type="button" id="btnMulai" class="btn mybtn py-lg-3 py-md-2 px-4">MULAI SEKARANG!</button>
+                <button type="button" id="btnMulai" class="btn btn-main py-lg-3 py-md-2 px-4">MULAI SEKARANG!</button>
             </div>
 
         </div>
