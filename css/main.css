@@ -155,6 +155,21 @@ img {
     font-size: 20px;
 }
 
+.n-nomor {
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+}
+
+.mutiara {
+    font-size: 20px;
+    color: #2980b9;
+}
+
+.container-hasil{
+    background-color: #ecf0f1;
+}
+
 @media (max-width: 1199.98px) {
     .modal-dialog {
         max-width: 40%;

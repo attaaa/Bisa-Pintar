@@ -182,13 +182,46 @@
         </div>
     </div>
 
+    <!--modal nilai-->
+    <div class="modal fade" id="modalNilai" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content px-2 text-center">
+                <div class="modal-body pb-4">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="text-center my-4">HASIL</h3>
+                    <div class="container-hasil py-3">
+                        <div class="row">
+                            <div class="col n-nomor">Nomor 1</div>
+                            <div id="hasil1" class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col n-nomor">Nomor 2</div>
+                            <div id="hasil2" class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col n-nomor">Nomor 3</div>
+                            <div id="hasil3" class="col"></div>
+                        </div>
+                    </div>
+                    <div id="nol-benar" class="mt-4 mb-3 mutiara">
+                        Jangan menyerah dan coba lagi. Tetap semangat dan selamat belajar.
+                        <div class="row mb-4"><div class="col"><i class="fas fa-smile-wink text-primary fa-7x"></i></div></div>
+                    </div>
+                    <button type="button" class="btn btn-main w-100">LIHAT PEMBAHASAN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     
     <script>
-
+        $('#nol-benar').hide();
         //Kunci jawaban
         var kj1 = 'a';
         var kj2 = 'b';
@@ -268,13 +301,49 @@
             
         });
 
+        function jawabanBenarr(container) {
+            $(container).addClass('text-success');
+            $(container).text('benar');
+        }
+
+        function jawabanSalah(container) {
+            $(container).addClass('text-danger');
+            $(container).text('salah');
+        }
+        
         //hitung nilai jika tombol ya di klik
         $('#yaSelesai').click(function(){
             var jawabanBenar = 0;
-            if (jawaban1 == kj1) { jawabanBenar++; }
-            if (jawaban2 == kj2) { jawabanBenar++; }
-            if (jawaban3 == kj3) { jawabanBenar++; }
-            alert(jawabanBenar)
+
+            $('#modalSelesai').modal('hide');
+
+            if (jawaban1 == kj1) { 
+                jawabanBenar++; 
+                jawabanBenarr('#hasil1');
+            } else {
+                jawabanSalah('#hasil1');
+            }
+
+            if (jawaban2 == kj2) { 
+                jawabanBenar++; 
+                jawabanBenarr('#hasil2');    
+            } else {
+                jawabanSalah('#hasil2');
+            }
+
+            if (jawaban3 == kj3) { 
+                jawabanBenar++; 
+                jawabanBenarr('#hasil3');
+            } else {
+                jawabanSalah('#hasil3');
+            }
+            
+            if (jawabanBenar == 0) {
+                $('#nol-benar').show();
+            }
+
+            $('#modalNilai').modal('show');
+
         })
 
 
