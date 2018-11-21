@@ -205,9 +205,20 @@
                             <div id="hasil3" class="col"></div>
                         </div>
                     </div>
-                    <div id="nol-benar" class="mt-4 mb-3 mutiara">
+                    <!--Pesan jika semua jawaban salah atau satu nomor benar-->
+                    <div id="nol-benar" class="mt-4 mb-3 mutiara text-primary">
                         Jangan menyerah dan coba lagi. Tetap semangat dan selamat belajar.
                         <div class="row mb-4"><div class="col"><i class="fas fa-smile-wink text-primary fa-7x"></i></div></div>
+                    </div>
+                    <!--Pesan jika benar dua nomor-->
+                    <div id="dua-benar" class="mt-4 mb-3 mutiara text-primary">
+                        Hampir saja, tetap semangat dan terus mencoba.
+                        <div class="row mb-4"><div class="col"><i class="fas fa-smile-wink text-primary fa-7x"></i></div></div>
+                    </div>
+                    <!--Pesan jika semua jawaban benar-->
+                    <div id="tiga-benar" class="mt-4 mb-3 mutiara text-success">
+                        Selamat anda menjawab semua soal dengan benar
+                        <div class="row mb-4"><div class="col"><i class="fas fa-smile-beam text-success fa-7x"></i></div></div>
                     </div>
                     <button type="button" class="btn btn-main w-100">LIHAT PEMBAHASAN</button>
                 </div>
@@ -221,7 +232,11 @@
     <script src="js/main.js"></script>
     
     <script>
+
         $('#nol-benar').hide();
+        $('#dua-benar').hide();
+        $('#tiga-benar').hide();
+
         //Kunci jawaban
         var kj1 = 'a';
         var kj2 = 'b';
@@ -313,6 +328,10 @@
         
         //hitung nilai jika tombol ya di klik
         $('#yaSelesai').click(function(){
+            $('#nol-benar').hide();
+            $('#dua-benar').hide();
+            $('#tiga-benar').hide();
+
             var jawabanBenar = 0;
 
             $('#modalSelesai').modal('hide');
@@ -338,8 +357,12 @@
                 jawabanSalah('#hasil3');
             }
             
-            if (jawabanBenar == 0) {
+            if ((jawabanBenar == 0) || (jawabanBenar == 1)) {
                 $('#nol-benar').show();
+            } else if (jawabanBenar == 2) {
+                $('#dua-benar').show();
+            } else if (jawabanBenar == 3) {
+                $('#tiga-benar').show();
             }
 
             $('#modalNilai').modal('show');
