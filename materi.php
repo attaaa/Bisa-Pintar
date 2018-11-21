@@ -3,7 +3,8 @@
     if (!isset($_SESSION['login'])){
         header('Location: index.php');
     }    
-?>
+    $_SESSION['location'] = 'Location: index.php';
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -96,7 +97,7 @@
 					<div class="card-body">
 						<h5 class="card-title">ERD</h5>
 						<p class="card-text">ERD merupakan ....</p>
-						<button onclick="location.href='materi/merd.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/merd.php';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>

@@ -1,3 +1,11 @@
+<?php 
+    session_start(); 
+    if (!isset($_SESSION['login'])){
+        header('Location: ../index.php');
+    }    
+    $_SESSION['location'] = 'Location: ../index.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +16,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>BisaPintar | Materi Flowchart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>BisaPintar | Materi ERD</title>
 </head>
 
 <body class="mt-lg-5 mt-md-4 mb-5">
 
     <!--Tampilan navigasi mobile-->
-    <div class="container container-header-sm bg-dark py-3 px-4 mb-5">
+	<div class="container container-header-sm bg-dark py-3 px-4 mb-5">
         <button type="button" class="btnNav text-light d-flex align-items-center">
             <i class="fas fa-bars "></i><span class="ml-3 menu">Menu</span>
         </button>
@@ -60,21 +71,27 @@
                 <a href="../functions/logout.php" class="nav-link mx-4 px-0">LOGOUT</a>
             </li>
         </ul>
-        </div>
+    </div>
 
     <!--Main Submateri-->
     <div class="container px-5">
-        <h2 class="submateri-title">Flowchart</h2>
-        <h4 class="mb-3">Flowchart Diagram</h4>
+        <h2 class="submateri-title">ERD</h2>
+        <h4 class="mb-3">Entity Relationship Diagram</h4>
         <div>
             <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#pengertian" data-toggle="modal">
                 <i class="fas fa-play mr-3"></i>Pengertian
             </button>
-            <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#jenis" data-toggle="modal">
-                <i class="fas fa-play mr-3"></i>Jenis-jenis
+            <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#entitas" data-toggle="modal">
+                <i class="fas fa-play mr-3"></i>Entitas
             </button>
-            <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#simbol" data-toggle="modal">
-                <i class="fas fa-play mr-3"></i>Simbol
+            <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#atribut" data-toggle="modal">
+                <i class="fas fa-play mr-3"></i>Atirubut
+            </button>
+            <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#relasi" data-toggle="modal">
+                <i class="fas fa-play mr-3"></i>Relasi
+            </button>
+            <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#kardinalitas" data-toggle="modal">
+                <i class="fas fa-play mr-3"></i>Kardinalitas
             </button>
             <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#contoh" data-toggle="modal">
                 <i class="fas fa-play mr-3"></i>Contoh
@@ -89,7 +106,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Pengertian Flowchart</h4>
+                    <h4 class="modal-title">Pengertian ERD</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -111,13 +128,13 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="jenis">
+    <div class="modal" id="entitas">
         <div class="modal-dialog">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Jenis-jenis Flowchart</h4>
+                    <h4 class="modal-title">Pengertian ERD</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -139,13 +156,69 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="simbol">
+    <div class="modal" id="atribut">
         <div class="modal-dialog">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Simbol pada Flowchart</h4>
+                    <h4 class="modal-title">Atribut pada ERD</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="relasi">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Relasi Pada ERD</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="kardinalitas">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Kardinalitas ERD</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -173,7 +246,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Contoh Flowchart</h4>
+                    <h4 class="modal-title">Contoh ERD</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -193,7 +266,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
