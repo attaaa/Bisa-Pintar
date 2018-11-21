@@ -1,3 +1,10 @@
+<?php 
+    session_start(); 
+    if (!isset($_SESSION['login'])){
+        header('Location: index.php');
+    }    
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +36,7 @@
 					<a href="profile.php" class="nav-link mx-4 px-0 pb-0 nav-left">PROFILE</a>
 				</li>
 				<li class="nav-item">
-					<a href="materi.html" class="nav-link mx-4 px-0">MATERI</a>
+					<a href="materi.php" class="nav-link mx-4 px-0">MATERI</a>
 				</li>
 				<li class="nav-item">
 					<a href="latihan.php" class="nav-link mx-4 px-0 active" >LATIHAN</a>
@@ -49,7 +56,7 @@
 				<a href="profile.php" class="nav-link mx-4 px-0 pb-0 nav-left">PROFILE</a>
 			</li>
 			<li class="nav-item">
-				<a href="materi.html" class="nav-link mx-4 px-0">MATERI</a>
+				<a href="materi.php" class="nav-link mx-4 px-0">MATERI</a>
 			</li>
 			<li class="nav-item">
 				<a href="latihan.php" class="nav-link mx-4 px-0 active">LATIHAN</a>
@@ -368,8 +375,6 @@
             $('#modalNilai').modal('show');
 
         })
-
-
 
     </script>
 

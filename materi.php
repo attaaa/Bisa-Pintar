@@ -1,3 +1,10 @@
+<?php 
+    session_start(); 
+    if (!isset($_SESSION['login'])){
+        header('Location: index.php');
+    }    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +37,7 @@
 					<a href="profile.php" class="nav-link mx-4 px-0 pb-0 nav-left">PROFILE</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link mx-4 px-0 active" href="materi.html">MATERI</a>
+					<a class="nav-link mx-4 px-0 active" href="materi.php">MATERI</a>
 				</li>
 				<li class="nav-item">
 					<a href="latihan.php" class="nav-link mx-4 px-0">LATIHAN</a>
@@ -50,7 +57,7 @@
 				<a href="profile.php" class="nav-link mx-4 px-0 pb-0 nav-left">PROFILE</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link mx-4 px-0 active" href="materi.html">MATERI</a>
+				<a class="nav-link mx-4 px-0 active" href="materi.php">MATERI</a>
 			</li>
 			<li class="nav-item">
 				<a href="latihan.php" class="nav-link mx-4 px-0">LATIHAN</a>
@@ -77,7 +84,7 @@
 					<div class="card-body">
 						<h5 class="card-title">PSPEC</h5>
 						<p class="card-text">Pspec merupakan ....</p>
-						<button onclick="location.href='mpspec.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/mpspec.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>
@@ -89,7 +96,7 @@
 					<div class="card-body">
 						<h5 class="card-title">ERD</h5>
 						<p class="card-text">ERD merupakan ....</p>
-						<button onclick="location.href='merd.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/merd.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>
@@ -101,7 +108,7 @@
 					<div class="card-body">
 						<h5 class="card-title">FLOWCHART</h5>
 						<p class="card-text">Flowchart ... </p>
-						<button onclick="location.href='mflowchart.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/mflowchart.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>
