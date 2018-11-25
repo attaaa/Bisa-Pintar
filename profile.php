@@ -3,7 +3,7 @@
     if (!isset($_SESSION['login'])){
         header('Location: index.php');
     }  
-    $_SESSION['location'] = 'Location: index.php';  
+    $_SESSION['location'] = 'Location: ../index.php';  
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +62,7 @@
                     <a href="latihan.php" class="btnMasuk nav-link mx-2 px-0">LATIHAN</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="btnMasuk nav-link mx-2 px-0">LOG OUT</a>
+                    <a href="#" class="btnLogout btnMasuk nav-link mx-2 px-0">LOGOUT</a>
                 </li>
             </ul>
         </div>
@@ -82,7 +82,7 @@
 				<a href="latihan.php" class="nav-link mx-4 px-0">LATIHAN</a>
             </li>
             <li class="nav-item">
-				<a href="#" class="nav-link mx-4 px-0">LOGOUT</a>
+				<a href="#" class="btnLogout nav-link mx-4 px-0">LOGOUT</a>
 			</li>
 		</ul>
     </div>
@@ -111,16 +111,24 @@
 
                 <!--profile highlight-->
                 <div class="profile-head mb-4">
+                    <?php if (!isset($_SESSION['user'])): ?>
                     <h2 class="text-main main-name">Kshiti Ghelani</h2>
+                    <?php else: ?>
+                    <h2 class="text-main main-name"><?php echo $_SESSION['user'][2]; ?></h2>
+                    <?php endif; ?>
                     <h5 class="">Student of Computing</h5>
                 </div>
 
                 <div class="row mb-2">
                     <div class="col-lg-5 col-12">
-                        <label>User Id</label>
+                        <label>Username</label>
                     </div>
                     <div class="col-lg-7 col-12">
+                        <?php if (!isset($_SESSION['user'])): ?>
                         <p>Kshiti123</p>
+                        <?php else: ?>
+                        <p><?php echo $_SESSION['user'][0];?></p>
+                        <?php endif; ?>
                     </div>
                 </div>
 
@@ -129,7 +137,11 @@
                         <label>Name</label>
                     </div>
                     <div class="col-lg-7 col-12">
+                        <?php if (!isset($_SESSION['user'])): ?>
                         <p>Kshiti Ghelani</p>
+                        <?php else: ?>
+                        <p><?php echo $_SESSION['user'][2]; ?></p>
+                        <?php endif; ?>
                     </div>
                 </div>
 
@@ -138,12 +150,13 @@
                         <label>Email</label>
                     </div>
                     <div class="col-lg-7 col-12">
+                        <?php if (!isset($_SESSION['user'])): ?>
                         <p class="text-nowrap">kshitighelani@gmail.com</p>
+                        <?php else: ?>
+                        <p class="text-nowrap"><?php echo $_SESSION['user'][3]; ?></p>
+                        <?php endif; ?>
                     </div>
                 </div>
-
-                
-                
             </div>
 
         </div>
@@ -159,13 +172,13 @@
                     </button>
                     <form id="formEdit" action="functions/simpan_edit.php" method="GET" class="mt-5 mb-4">
                         <div class="form-group">
-                            <input type="text" name="nama" class="form-control" id="nama" placeholder="nama lengkap" value="Kshiti123">
+                            <input type="text" name="nama" class="form-control" id="nama" placeholder="nama lengkap" value="<?php if (!isset($_SESSION['user'])): echo 'test'; else: echo $_SESSION['user'][2]; endif; ?>">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="uname" class="form-control" id="uname" placeholder="username" value="Kshiti Ghelani">
+                            <input type="text" name="uname" class="form-control" id="uname" placeholder="username" value="<?php if (!isset($_SESSION['user'])): echo 'test'; else: echo $_SESSION['user'][0]; endif; ?>">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" id="email" placeholder="email" value="kshitighelani@gmail.com">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="email" value="<?php if (!isset($_SESSION['user'])): echo 'test'; else: echo $_SESSION['user'][3]; endif; ?>">
                         </div>
                         <div class="form-group mb-5">
                             <input type="password" name="pass" class="form-control" id="pass" placeholder="password">
@@ -178,13 +191,27 @@
         </div>
     </div>
 
+    <!--modal logout-->
+    <div class="modal fade" id="modalLogout" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content px-2 text-center">
+                <div class="modal-body">
+                    <p class="mt-5"><i class="fas fa-sign-out-alt fa-5x text-danger"></i><br/><br/>Anda yakin ingin keluar?</p>
+                    <button type="button" class="btn btn-danger mr-3" onclick="location.href='functions/logout.php';">Ya</button><button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
     <script>
-        $('#modalEdit').modal('show');
+        $('.btnLogout').click(function(){
+            $('#modalLogout').modal('show');
+        })
     </script>
 
     <?php

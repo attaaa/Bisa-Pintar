@@ -2,8 +2,7 @@
     session_start(); 
     if (!isset($_SESSION['login'])){
         header('Location: index.php');
-    }    
-    $_SESSION['location'] = 'Location: index.php';
+    }
 ?> 
 
 <!DOCTYPE html>
@@ -44,7 +43,7 @@
 					<a href="latihan.php" class="nav-link mx-4 px-0">LATIHAN</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link mx-4 px-0">LOGOUT</a>
+					<a href="#" class="btnLogout nav-link mx-4 px-0">LOGOUT</a>
 				</li>
             </ul>
         </div>
@@ -64,7 +63,7 @@
 				<a href="latihan.php" class="nav-link mx-4 px-0">LATIHAN</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link mx-4 px-0">LOGOUT</a>
+				<a href="#" class="btnLogout nav-link mx-4 px-0">LOGOUT</a>
 			</li>
 		</ul>
 	</div>
@@ -85,7 +84,7 @@
 					<div class="card-body">
 						<h5 class="card-title">PSPEC</h5>
 						<p class="card-text">Pspec merupakan ....</p>
-						<button onclick="location.href='materi/mpspec.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/mpspec.html';" type="button" class="btn btn-main w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>
@@ -97,7 +96,7 @@
 					<div class="card-body">
 						<h5 class="card-title">ERD</h5>
 						<p class="card-text">ERD merupakan ....</p>
-						<button onclick="location.href='materi/merd.php';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/merd.php';" type="button" class="btn btn-main w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>
@@ -109,7 +108,7 @@
 					<div class="card-body">
 						<h5 class="card-title">FLOWCHART</h5>
 						<p class="card-text">Flowchart ... </p>
-						<button onclick="location.href='materi/mflowchart.html';" type="button" class="btn mybtn w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/mflowchart.html';" type="button" class="btn btn-main w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>
@@ -118,10 +117,28 @@
 	</div>
 	<!--End Container Pilihan Materi-->
 
+	<!--modal logout-->
+    <div class="modal fade" id="modalLogout" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content px-2 text-center">
+                <div class="modal-body">
+                    <p class="mt-5"><i class="fas fa-sign-out-alt fa-5x text-danger"></i><br/><br/>Anda yakin ingin keluar?</p>
+                    <button type="button" class="btn btn-danger mr-3" onclick="location.href='functions/logout.php';">Ya</button><button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	
+	<script>
+        $('.btnLogout').click(function(){
+            $('#modalLogout').modal('show');
+        })
+    </script>	
 
 </body>
 

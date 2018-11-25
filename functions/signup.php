@@ -12,6 +12,11 @@
             header('Location: ../');
         } else {
             $_SESSION['daftar'] = 'valid';
+            $_SESSION['login'] = 'valid';
+
+            $user = array($username, $password, $name, $email);
+            $_SESSION['user'] = $user;
+
             header('Location: ../profile.php');
         }
     }

@@ -3,7 +3,6 @@
     if (!isset($_SESSION['login'])){
         header('Location: index.php');
     }    
-    $_SESSION['location'] = 'Location: index.php';
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +42,7 @@
 					<a href="latihan.php" class="nav-link mx-4 px-0 active" >LATIHAN</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link mx-4 px-0">LOGOUT</a>
+					<a href="#" class="btnLogout nav-link mx-4 px-0">LOGOUT</a>
 				</li>
             </ul>
         </div>
@@ -63,7 +62,7 @@
 				<a href="latihan.php" class="nav-link mx-4 px-0 active">LATIHAN</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link mx-4 px-0">LOGOUT</a>
+				<a href="#" class="btnLogout nav-link mx-4 px-0">LOGOUT</a>
 			</li>
 		</ul>
 	</div>
@@ -234,12 +233,28 @@
         </div>
     </div>
 
+    <!--modal logout-->
+    <div class="modal fade" id="modalLogout" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content px-2 text-center">
+                <div class="modal-body">
+                    <p class="mt-5"><i class="fas fa-sign-out-alt fa-5x text-danger"></i><br/><br/>Anda yakin ingin keluar?</p>
+                    <button type="button" class="btn btn-danger mr-3" onclick="location.href='functions/logout.php';">Ya</button><button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     
     <script>
+
+        $('.btnLogout').click(function(){
+            $('#modalLogout').modal('show');
+        })
 
         $('#nol-benar').hide();
         $('#dua-benar').hide();
