@@ -188,7 +188,7 @@
         //loading sebelum masuk page 4s
         setTimeout(() => {
             $('#loader').fadeOut('slow');
-        }, 4000);
+        }, 3000);
         
         //event tombol masuk di klik
         $('.btnMasuk').click(function(){
