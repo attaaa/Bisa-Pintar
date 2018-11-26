@@ -15,6 +15,19 @@
 
 <body class="mt-lg-5 mt-md-4 mb-5">
 
+    <!--loading animation-->
+    <div id="loader">
+        <div class="container text-center">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <br><br>
+            <span>Sedang memuat, harap tunggu.</span>
+        </div>
+    </div>
+
     <!--Tampilan navigasi mobile-->
     <div class="container container-header-sm bg-dark py-3 px-4">
         <button type="button" class="btnNav text-light d-flex align-items-center">
@@ -172,6 +185,12 @@
 
     <script>
 
+        //loading sebelum masuk page 4s
+        setTimeout(() => {
+            $('#loader').fadeOut('slow');
+        }, 4000);
+        
+        //event tombol masuk di klik
         $('.btnMasuk').click(function(){
             $('#modalLogin').modal('show');
 
@@ -179,6 +198,7 @@
             $('.sidenav').css('width','0');
         });
 
+        //event tombol daftar di klik
         $('.btnDaftar').click(function(){
             $('#modalDaftar').modal('show');
 
@@ -186,18 +206,9 @@
             $('.sidenav').css('width','0');
         });
 
+        //event tombol mulai di klik
         $('#btnMulai').click(function(){
             $('#modalDaftar').modal('show');
-        });
-
-        $('.btnNav').click(function(){
-            $('#modalSide').modal('show');
-            $('.sidenav').css('width','250px');
-        });
-
-        $('#closeNav').click(function(){
-            $('#modalSide').modal('hide');
-            $('.sidenav').css('width','0');
         });
 
         //hide semua form helper pada form login
@@ -253,6 +264,7 @@
     </script>
 
     <?php
+        //jika masuk tidak valid maka tampilkan modal InvalidMasuk
         if (isset($_SESSION['login'])) {
             if ($_SESSION['login'] == 'invalid') {
                 echo "<script>$('#modalInvalidMasuk').modal('show');</script>";
@@ -260,6 +272,7 @@
             unset($_SESSION['login']); 
         }
 
+        //jika daftar tidak valid maka tampilkan modal InvalidDaftar
         if (isset($_SESSION['daftar'])) {
             if ($_SESSION['daftar'] == 'invalid') {
                 echo "<script>$('#modalInvalidDaftar').modal('show');</script>";
