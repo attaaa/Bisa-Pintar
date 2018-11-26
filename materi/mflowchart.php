@@ -104,7 +104,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://streamable.com/s/oqc3c/kqqsrb" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe src="https://streamable.com/sz9tc" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
@@ -124,14 +124,14 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Jenis-jenis Flowchart</h4>
+                    <h4 class="modal-title">Kelebihan dan Kekurangan Flowchart</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://streamable.com/nyt28"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://streamable.com/s/oqc3c/kqqsrb" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe src="https://streamable.com/fmdvb" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
@@ -186,7 +186,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://streamable.com/s/chcp0/bkorwd" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe src="https://streamable.com/7bvqv" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
