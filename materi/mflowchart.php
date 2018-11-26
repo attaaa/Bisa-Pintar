@@ -79,7 +79,7 @@
                 <i class="fas fa-play mr-3"></i>Pengertian
             </button>
             <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#jenis" data-toggle="modal">
-                <i class="fas fa-play mr-3"></i>Jenis-jenis
+                <i class="fas fa-play mr-3"></i>Kelebihan dan Kekurangan
             </button>
             <button type="button" class="btn btn-block btn-outline-warning p-3" style="text-align: left; font-size: 22px;" data-target="#simbol" data-toggle="modal">
                 <i class="fas fa-play mr-3"></i>Simbol
