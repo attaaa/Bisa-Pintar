@@ -91,12 +91,12 @@
 
             <div class="col text-left">
                 <div class="prev d-inline disable">
-                    <i class="fas fa-chevron-circle-left mr-2 align-middle"></i><span class="align-middle">Soal sebelumnya</span>
+                    <i class="fas fa-chevron-circle-left mr-2 align-middle"></i><span class="align-middle d-md-inline d-none">Soal sebelumnya</span>
                 </div>
             </div>
             <div class="col text-right">
                 <div class="next d-inline active" id="next1">
-                    <span class="align-middle">Soal selanjutnya</span><i class="fas fa-chevron-circle-right ml-2 align-middle"></i>
+                    <span class="align-middle d-md-inline d-none">Soal selanjutnya</span><i class="fas fa-chevron-circle-right ml-2 align-middle"></i>
                 </div>
             </div>
 
@@ -123,12 +123,12 @@
 
             <div class="col text-left">
                 <div class="prev d-inline active" id="prev2">
-                    <i class="fas fa-chevron-circle-left mr-2 align-middle"></i><span class="align-middle">Soal sebelumnya</span>
+                    <i class="fas fa-chevron-circle-left mr-2 align-middle"></i><span class="align-middle d-md-inline d-none">Soal sebelumnya</span>
                 </div>
             </div>
             <div class="col text-right">
                 <div class="next d-inline active" id="next2">
-                    <span class="align-middle">Soal selanjutnya</span><i class="fas fa-chevron-circle-right ml-2 align-middle"></i>
+                    <span class="align-middle d-md-inline d-none">Soal selanjutnya</span><i class="fas fa-chevron-circle-right ml-2 align-middle"></i>
                 </div>
             </div>
 
@@ -155,13 +155,13 @@
 
             <div class="col text-left">
                 <div class="prev d-inline active" id="prev3">
-                    <i class="fas fa-chevron-circle-left mr-2 align-middle"></i><span class="align-middle">Soal sebelumnya</span>
+                    <i class="fas fa-chevron-circle-left mr-2 align-middle"></i><span class="align-middle d-md-inline d-none">Soal sebelumnya</span>
                 </div>
             </div>
             <div class="col text-center"><button type="button" class="btn btn-main" id="selesaiBtn">SELESAI</button></div>
             <div class="col text-right">
                 <div class="next d-inline disable" id="next3">
-                    <span class="align-middle">Soal selanjutnya</span><i class="fas fa-chevron-circle-right ml-2 align-middle"></i>
+                    <span class="align-middle d-md-inline d-none">Soal selanjutnya</span><i class="fas fa-chevron-circle-right ml-2 align-middle"></i>
                 </div>
             </div>
 
@@ -239,7 +239,7 @@
             <div class="modal-content px-2 text-center">
                 <div class="modal-body">
                     <p class="mt-5"><i class="fas fa-sign-out-alt fa-5x text-danger"></i><br/><br/>Anda yakin ingin keluar?</p>
-                    <button type="button" class="btn btn-danger mr-3" onclick="location.href='functions/logout.php';">Ya</button><button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                    <button type="button" class="btn btn-danger mr-2 px-3" onclick="location.href='functions/logout.php';">Ya</button><button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
                 </div>
             </div>
         </div>
@@ -251,10 +251,6 @@
     <script src="js/main.js"></script>
     
     <script>
-
-        $('.btnLogout').click(function(){
-            $('#modalLogout').modal('show');
-        })
 
         $('#nol-benar').hide();
         $('#dua-benar').hide();

@@ -197,7 +197,7 @@
             <div class="modal-content px-2 text-center">
                 <div class="modal-body">
                     <p class="mt-5"><i class="fas fa-sign-out-alt fa-5x text-danger"></i><br/><br/>Anda yakin ingin keluar?</p>
-                    <button type="button" class="btn btn-danger mr-3" onclick="location.href='functions/logout.php';">Ya</button><button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                    <button type="button" class="btn btn-danger mr-2 px-3" onclick="location.href='functions/logout.php';">Ya</button><button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
                 </div>
             </div>
         </div>
@@ -207,12 +207,6 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script>
-        $('.btnLogout').click(function(){
-            $('#modalLogout').modal('show');
-        })
-    </script>
 
     <?php
         if (isset($_SESSION['daftar'])) {
