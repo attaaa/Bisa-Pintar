@@ -92,7 +92,7 @@
         </div>
     </div>
 
-    <!-- The Modal -->
+    <!-- The Modal Pengertian-->
     <div class="modal fade" id="pengertian">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -115,7 +115,7 @@
         </div>
     </div>
 
-    <!-- The Modal -->
+    <!-- The Modal Aturan-->
     <div class="modal fade" id="aturan">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -138,7 +138,7 @@
         </div>
     </div>
 
-    <!-- The Modal -->
+    <!-- The Modal Contoh-->
     <div class="modal fade" id="contoh">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -152,7 +152,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://drive.google.com/open?id=1wqZDN13ydK2WtHyPYHCg4ugndsclvaJ2"
                             allowfullscreen></iframe>
                     </div>
                 </div>

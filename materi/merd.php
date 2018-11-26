@@ -113,7 +113,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=XVrbONqi00g"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=XVrbONqi00g"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=DanxdOpyQ30"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=DanxdOpyQ30"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=DanxdOpyQ30"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=_923xKNwfD8"
                             allowfullscreen></iframe>
                     </div>
                 </div>

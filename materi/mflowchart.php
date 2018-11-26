@@ -160,7 +160,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=D62wOBLAK0s"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=aLbEwEzQXAw"
                             allowfullscreen></iframe>
                     </div>
                 </div>

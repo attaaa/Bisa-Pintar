@@ -84,7 +84,7 @@
 					<div class="card-body">
 						<h5 class="card-title">PSPEC</h5>
 						<p class="card-text">Pspec merupakan ....</p>
-						<button onclick="location.href='materi/mpspec.html';" type="button" class="btn btn-main w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/mpspec.php';" type="button" class="btn btn-main w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>
@@ -108,7 +108,7 @@
 					<div class="card-body">
 						<h5 class="card-title">FLOWCHART</h5>
 						<p class="card-text">Flowchart ... </p>
-						<button onclick="location.href='materi/mflowchart.html';" type="button" class="btn btn-main w-100">Mulai Belajar</a>
+						<button onclick="location.href='materi/mflowchart.php';" type="button" class="btn btn-main w-100">Mulai Belajar</a>
 					</div>
 				</div>
 			</div>
