@@ -104,8 +104,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
-                            allowfullscreen></iframe>
+                        <iframe src="https://streamable.com/s/oqc3c/kqqsrb" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
@@ -160,8 +159,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=D62wOBLAK0s"
-                            allowfullscreen></iframe>
+                        <iframe src="https://streamable.com/s/oqc3c/kqqsrb" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
@@ -188,8 +186,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=aLbEwEzQXAw"
-                            allowfullscreen></iframe>
+                        <iframe src="https://streamable.com/s/chcp0/bkorwd" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
@@ -214,16 +211,16 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/main.js"></script>
 
     <script>
         $('.btnLogout').click(function(){
             $('#modalLogout').modal('show');
         })
-    </script>
+    </script>	
 
 </body>
 

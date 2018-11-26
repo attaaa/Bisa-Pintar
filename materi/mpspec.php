@@ -93,22 +93,26 @@
     </div>
 
     <!-- The Modal Pengertian-->
-    <div class="modal fade" id="pengertian">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal" id="pengertian">
+        <div class="modal-dialog">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Pengertian Pspec</h4>
+                    <h4 class="modal-title">Atribut pada ERD</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
-                            allowfullscreen></iframe>
+                        <iframe src="https://streamable.com/s/ltome/ixkxhw" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
 
             </div>
@@ -173,16 +177,16 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/main.js"></script>
 
     <script>
         $('.btnLogout').click(function(){
             $('#modalLogout').modal('show');
         })
-    </script>
+    </script>	
     
 </body>
 
