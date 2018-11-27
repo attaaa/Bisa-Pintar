@@ -18,6 +18,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>BisaPintar | Materi Flowchart</title>
+    <style>
+        .modal-dialog {
+            max-width: 60% !important;
+        }
+    </style>
 </head>
 
 <body class="mt-lg-5 mt-md-4 mb-5">
@@ -91,7 +96,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="pengertian">
+    <div class="modal fade" id="pengertian">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -110,7 +115,7 @@
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-main" data-dismiss="modal">Close</button>
                 </div>
 
             </div>
@@ -118,7 +123,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="jenis">
+    <div class="modal fade" id="jenis">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -146,7 +151,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="simbol">
+    <div class="modal fade" id="simbol">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -173,7 +178,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="contoh">
+    <div class="modal fade" id="contoh">
         <div class="modal-dialog">
             <div class="modal-content">
 

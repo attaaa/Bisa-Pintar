@@ -324,3 +324,14 @@ img {
 #loader ul li:nth-child(4){
     animation-delay: -0.35s;
 }
+
+/*button*/
+.btn-outline-warning{
+    color: #e67e22 !important;
+    border-color: #e67e22 !important;
+}
+
+.btn-outline-warning:hover{
+    color: white !important;
+    background-color: #e67e22 !important;
+}

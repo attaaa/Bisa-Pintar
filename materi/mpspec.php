@@ -93,13 +93,13 @@
     </div>
 
     <!-- The Modal Pengertian-->
-    <div class="modal" id="pengertian">
+    <div class="modal fade" id="pengertian">
         <div class="modal-dialog">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Atribut pada ERD</h4>
+                    <h4 class="modal-title">Pengertian PSPEC</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -138,6 +138,11 @@
                     </div>
                 </div>
 
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
             </div>
         </div>
     </div>
@@ -159,6 +164,11 @@
                         <iframe class="embed-responsive-item" src="https://drive.google.com/open?id=1wqZDN13ydK2WtHyPYHCg4ugndsclvaJ2"
                             allowfullscreen></iframe>
                     </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
 
             </div>

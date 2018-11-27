@@ -179,7 +179,7 @@
                     </button>
                     <p class="mt-5">
                         <i class="fas fa-exclamation-circle fa-5x text-danger"></i><br/><br/>
-                        <span id="pesanSelesai"></span></br>
+                        <span id="pesanSelesai"></span><br/>
                         <span>Anda yakin ingin menyelesaikan latihan?</span>
                     </p>
                     <button type="button" class="btn btn-danger px-4" id="yaSelesai">Ya</button>

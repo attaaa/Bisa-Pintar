@@ -16,11 +16,13 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>BisaPintar | Materi ERD</title>
+    <style>
+        .modal-dialog {
+            max-width: 60% !important;
+        }
+    </style>
 </head>
 
 <body class="mt-lg-5 mt-md-4 mb-5">
@@ -100,8 +102,8 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="pengertian">
-        <div class="modal-dialog">
+    <div class="modal fade" id="pengertian">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -127,7 +129,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="entitas">
+    <div class="modal fade" id="entitas">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -154,7 +156,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="atribut">
+    <div class="modal fade" id="atribut">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -181,7 +183,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="relasi">
+    <div class="modal fade" id="relasi">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -208,7 +210,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="kardinalitas">
+    <div class="modal fade" id="kardinalitas">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -235,7 +237,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="contoh">
+    <div class="modal fade" id="contoh">
         <div class="modal-dialog">
             <div class="modal-content">
 

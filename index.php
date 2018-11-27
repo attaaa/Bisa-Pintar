@@ -185,7 +185,7 @@
 
     <script>
 
-        //loading sebelum masuk page 4s
+        //loading sebelum masuk page 3s
         setTimeout(() => {
             $('#loader').fadeOut('slow');
         }, 3000);
