@@ -104,7 +104,7 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive embed-responsive-4by3">
                         <iframe src="https://streamable.com/s/ltome/ixkxhw" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive embed-responsive-4by3">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"
                             allowfullscreen></iframe>
                     </div>
@@ -159,7 +159,7 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive embed-responsive-4by3">
                         <iframe class="embed-responsive-item" src="https://drive.google.com/open?id=1wqZDN13ydK2WtHyPYHCg4ugndsclvaJ2"
                             allowfullscreen></iframe>
                     </div>
