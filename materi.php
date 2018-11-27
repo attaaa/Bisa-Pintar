@@ -43,6 +43,9 @@
 					<a href="latihan.php" class="nav-link mx-4 px-0">LATIHAN</a>
 				</li>
 				<li class="nav-item">
+					<a href="help.php" class="nav-link mx-4 px-0" >HELP</a>
+				</li>
+				<li class="nav-item">
 					<a href="#" class="btnLogout nav-link mx-4 px-0">LOGOUT</a>
 				</li>
             </ul>
@@ -62,6 +65,9 @@
 			<li class="nav-item">
 				<a href="latihan.php" class="nav-link mx-4 px-0">LATIHAN</a>
 			</li>
+			<li class="nav-item">
+                <a href="help.php" class="nav-link mx-4 px-0" >HELP</a>
+            </li>
 			<li class="nav-item">
 				<a href="#" class="btnLogout nav-link mx-4 px-0">LOGOUT</a>
 			</li>

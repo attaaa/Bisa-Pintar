@@ -53,16 +53,19 @@
             </button>
             <ul class="nav flex-column mynav px-4 mt-5">
                 <li class="nav-item ">
-                    <a href="profile.php" class="nav-link active mx-2 px-0">PROFILE</a>
+                    <a href="profile.php" class="nav-link active mx-4 px-0">PROFILE</a>
                 </li>
                 <li class="nav-item">
-                    <a href="materi.html" class="btnDaftar nav-link mx-2 px-0">MATERI</a>
+                    <a href="materi.php" class="btnDaftar nav-link mx-4 px-0">MATERI</a>
                 </li>
                 <li class="nav-item">
-                    <a href="latihan.php" class="btnMasuk nav-link mx-2 px-0">LATIHAN</a>
+                    <a href="latihan.php" class="btnMasuk nav-link mx-4 px-0">LATIHAN</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="btnLogout btnMasuk nav-link mx-2 px-0">LOGOUT</a>
+                    <a href="help.php" class="nav-link mx-4 px-0" >HELP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btnLogout btnMasuk nav-link mx-4 px-0">LOGOUT</a>
                 </li>
             </ul>
         </div>
@@ -80,6 +83,9 @@
 			</li>
 			<li class="nav-item">
 				<a href="latihan.php" class="nav-link mx-4 px-0">LATIHAN</a>
+            </li>
+            <li class="nav-item">
+                <a href="help.php" class="nav-link mx-4 px-0" >HELP</a>
             </li>
             <li class="nav-item">
 				<a href="#" class="btnLogout nav-link mx-4 px-0">LOGOUT</a>
