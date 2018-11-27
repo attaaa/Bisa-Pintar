@@ -228,7 +228,6 @@
                         Selamat anda menjawab semua soal dengan benar
                         <div class="row mb-4"><div class="col"><i class="fas fa-smile-beam text-success fa-7x"></i></div></div>
                     </div>
-                    <button type="button" class="btn btn-main w-100">LIHAT PEMBAHASAN</button>
                 </div>
             </div>
         </div>
