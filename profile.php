@@ -39,6 +39,20 @@
         </div>
     </div>
 
+    <!--modal berhasil update akun-->
+    <div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content px-2 text-center">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="mt-5"><i class="fas fa-check-circle fa-5x text-success"></i><br/><br/>Akun anda berhasil di update.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<!--Tampilan navigasi mobile-->
 	<div class="container container-header-sm bg-dark py-3 px-4 mb-5">
         <button type="button" class="btnNav text-light d-flex align-items-center">
@@ -176,7 +190,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <form id="formEdit" action="functions/simpan_edit.php" method="GET" class="mt-5 mb-4">
+                    <form id="formEdit" action="functions/update.php" method="GET" class="mt-5 mb-4">
                         <div class="form-group">
                             <input type="text" name="nama" class="form-control" id="nama" placeholder="nama lengkap" value="<?php if (!isset($_SESSION['user'])): echo 'test'; else: echo $_SESSION['user'][2]; endif; ?>">
                         </div>
@@ -189,7 +203,7 @@
                         <div class="form-group mb-5">
                             <input type="password" name="pass" class="form-control" id="pass" placeholder="password">
                         </div>
-                        <button type="button" name="simpanEdit" class="btn btn-main py-2">SIMPAN</button>
+                        <button type="submit" name="update" class="btn btn-main py-2">SIMPAN</button>
                         <button class="btn btn-secondary py-2" data-dismiss="modal">BATAL</button>
                     </form>
                 </div>
@@ -220,6 +234,12 @@
                 echo "<script>$('#modalValidDaftar').modal('show');</script>";
             }
             unset($_SESSION['daftar']);
+        }
+        if (isset($_SESSION['update'])) {
+            if ($_SESSION['update'] == 'valid') {
+                echo "<script>$('#modalUpdate').modal('show');</script>";
+            }
+            unset($_SESSION['update']);
         }
     ?>
 
