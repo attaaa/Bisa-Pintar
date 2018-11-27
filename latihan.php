@@ -82,9 +82,9 @@
 
         <div class="pilihan">
             <div id="a1" class="jawaban mb-2 p-3">a. Entity Relational Diagram<input type="radio" name="pilihan1" value="a" id="ja1"></div>
-            <div id="b1" class="jawaban mb-2 p-3">b. Entity Relational Diagram<input type="radio" name="pilihan1" value="b" id="jb1"></div>
-            <div id="c1" class="jawaban mb-2 p-3">c. Entity Relational Diagram<input type="radio" name="pilihan1" value="c" id="jc1"></div>
-            <div id="d1" class="jawaban mb-2 p-3">d. Entity Relational Diagram<input type="radio" name="pilihan1" value="d" id="jd1"></div>
+            <div id="b1" class="jawaban mb-2 p-3">b. Entity Relation Diagram<input type="radio" name="pilihan1" value="b" id="jb1"></div>
+            <div id="c1" class="jawaban mb-2 p-3">c. Entity Related Diagram<input type="radio" name="pilihan1" value="c" id="jc1"></div>
+            <div id="d1" class="jawaban mb-2 p-3">d. Entity Relationship Diagram<input type="radio" name="pilihan1" value="d" id="jd1"></div>
         </div>
 
         <div class="row nav-soal">
@@ -109,14 +109,14 @@
 
         <div class="soal p-3 mb-4">
             <div class="nomor-soal text-main mb-3">SOAL 2:</div>
-            <div class="isi-soal text-center">Apa Kepanjangan dari ERD?</div>
+            <div class="isi-soal text-center">Memodelkan struktur data dan hubungan antar data adalah fungsi dari?</div>
         </div>
 
         <div class="pilihan">
-            <div id="a2" class="jawaban mb-2 p-3">a. Entity Relational Diagram<input type="radio" name="pilihan2" value="a" id="ja2"></div>
-            <div id="b2" class="jawaban mb-2 p-3">b. Entity Relational Diagram<input type="radio" name="pilihan2" value="b" id="jb2"></div>
-            <div id="c2" class="jawaban mb-2 p-3">c. Entity Relational Diagram<input type="radio" name="pilihan2" value="c" id="jc2"></div>
-            <div id="d2" class="jawaban mb-2 p-3">d. Entity Relational Diagram<input type="radio" name="pilihan2" value="d" id="jd2"></div>
+            <div id="a2" class="jawaban mb-2 p-3">a. PSPEC<input type="radio" name="pilihan2" value="a" id="ja2"></div>
+            <div id="b2" class="jawaban mb-2 p-3">b. ERD<input type="radio" name="pilihan2" value="b" id="jb2"></div>
+            <div id="c2" class="jawaban mb-2 p-3">c. Flowchart<input type="radio" name="pilihan2" value="c" id="jc2"></div>
+            <div id="d2" class="jawaban mb-2 p-3">d. Atribut<input type="radio" name="pilihan2" value="d" id="jd2"></div>
         </div>
 
         <div class="row nav-soal">
@@ -141,14 +141,14 @@
 
         <div class="soal p-3 mb-4">
             <div class="nomor-soal text-main mb-3">SOAL 3:</div>
-            <div class="isi-soal text-center">Apa Kepanjangan dari ERD?</div>
+            <div class="isi-soal text-center">Berikut ini adalah kekurangan dari Flowchart, kecuali?</div>
         </div>
 
         <div class="pilihan">
-            <div id="a3" class="jawaban mb-2 p-3">a. Entity Relational Diagram<input type="radio" name="pilihan3" value="a" id="ja3"></div>
-            <div id="b3" class="jawaban mb-2 p-3">b. Entity Relational Diagram<input type="radio" name="pilihan3" value="b" id="jb3"></div>
-            <div id="c3" class="jawaban mb-2 p-3">c. Entity Relational Diagram<input type="radio" name="pilihan3" value="c" id="jc3"></div>
-            <div id="d3" class="jawaban mb-2 p-3">d. Entity Relational Diagram<input type="radio" name="pilihan3" value="d" id="jd3"></div>
+            <div id="a3" class="jawaban mb-2 p-3">a. Tidak cocok untuk algoritma yang kompleks<input type="radio" name="pilihan3" value="a" id="ja3"></div>
+            <div id="b3" class="jawaban mb-2 p-3">b. Cocok untuk algoritma yang kompleks<input type="radio" name="pilihan3" value="b" id="jb3"></div>
+            <div id="c3" class="jawaban mb-2 p-3">c. Sulit diterjemahkan kedalam bahasa kode program<input type="radio" name="pilihan3" value="c" id="jc3"></div>
+            <div id="d3" class="jawaban mb-2 p-3">d. Kurang detail<input type="radio" name="pilihan3" value="d" id="jd3"></div>
         </div>
 
         <div class="row nav-soal">
@@ -168,6 +168,7 @@
         </div>
 
     </div>
+    
 
     <!--alert apakah ingin menyelesaikan latihan -->
     <div class="modal fade" id="modalSelesai" tabindex="-1" role="dialog">
@@ -259,7 +260,7 @@
         //Kunci jawaban
         var kj1 = 'a';
         var kj2 = 'b';
-        var kj3 = 'c';
+        var kj3 = 'b';
 
         //jawaban yang dipilih
         var jawaban1, jawaban2, jawaban3;

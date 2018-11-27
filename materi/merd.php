@@ -115,7 +115,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://streamable.com/s/f207f/fdkcyh" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe src="https://streamable.com/mdz35" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
@@ -250,7 +250,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://streamable.com/s/52xug/punkej" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe src="https://streamable.com/j63kc" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
