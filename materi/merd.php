@@ -112,7 +112,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/mdz35" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe src="https://streamable.com/mdz35" frameborder="0" width="868px" height="488px" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
                     </div>
                 </div>
 
