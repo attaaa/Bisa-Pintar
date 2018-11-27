@@ -112,7 +112,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/mdz35" frameborder="0" width="868px" height="488px" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y-UMH_7w9I8"  allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -139,7 +139,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/fhstu" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GyGcTNVfLQA" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -166,7 +166,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/pxwiy" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe class="embed-responsive-item" src="https://youtube.com/embed/dhJyDaiyHL0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -193,7 +193,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/zqiwx" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pn9Il3UbCfE"allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -220,7 +220,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/j63kc" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fpzs5TRfNRI" allowfullscreen></iframe>
                     </div>
                 </div>
 

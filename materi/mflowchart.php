@@ -109,7 +109,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/sz9tc" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FXMeYB0eyDo" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://streamable.com/nyt28"
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iIkFYOskJ0s"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/fmdvb" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/GH-c9yPnltU" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -191,7 +191,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://streamable.com/7bvqv" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/O5RgUhSlRoU" allowfullscreen></iframe>
                     </div>
                 </div>
 
